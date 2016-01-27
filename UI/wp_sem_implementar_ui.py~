@@ -1,0 +1,39 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'wp_sem_implementar.ui'
+#
+# Created: Mon Mar  5 18:32:45 2012
+#      by: PyQt4 UI code generator 4.7.3
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt4 import QtCore, QtGui
+
+class Ui_wpSemImplementar(object):
+    def setupUi(self, wpSemImplementar):
+        wpSemImplementar.setObjectName("wpSemImplementar")
+        wpSemImplementar.resize(398, 297)
+        self.lblNotImplemented = QtGui.QLabel(wpSemImplementar)
+        self.lblNotImplemented.setGeometry(QtCore.QRect(40, 200, 318, 48))
+        font = QtGui.QFont()
+        font.setPointSize(17)
+        self.lblNotImplemented.setFont(font)
+        self.lblNotImplemented.setAlignment(QtCore.Qt.AlignCenter)
+        self.lblNotImplemented.setWordWrap(True)
+        self.lblNotImplemented.setObjectName("lblNotImplemented")
+        self.lblForbiddenAccess = QtGui.QLabel(wpSemImplementar)
+        self.lblForbiddenAccess.setGeometry(QtCore.QRect(96, 8, 187, 177))
+        self.lblForbiddenAccess.setText("")
+        self.lblForbiddenAccess.setPixmap(QtGui.QPixmap("../teste10/forbidden_access.jpg"))
+        self.lblForbiddenAccess.setScaledContents(True)
+        self.lblForbiddenAccess.setObjectName("lblForbiddenAccess")
+
+        self.retranslateUi(wpSemImplementar)
+        QtCore.QMetaObject.connectSlotsByName(wpSemImplementar)
+
+    def retranslateUi(self, wpSemImplementar):
+        wpSemImplementar.setWindowTitle(QtGui.QApplication.translate("wpSemImplementar", "Opção Sem Implementar", None, QtGui.QApplication.UnicodeUTF8))
+        wpSemImplementar.setTitle(QtGui.QApplication.translate("wpSemImplementar", "Opção não Implementada", None, QtGui.QApplication.UnicodeUTF8))
+        wpSemImplementar.setSubTitle(QtGui.QApplication.translate("wpSemImplementar", "Esta opção será implementada futuramente", None, QtGui.QApplication.UnicodeUTF8))
+        self.lblNotImplemented.setText(QtGui.QApplication.translate("wpSemImplementar", "Opção a ser implementada proximamente", None, QtGui.QApplication.UnicodeUTF8))
+
